@@ -3,22 +3,20 @@ layout: resume
 ---
 ## Currently
 
-Current Position Description
+Mega potato in graduate school
 
 ## Education
 
 `1990 - 1994`
-__University Name__
-Degree Awarded
+__University of Oregon Clark Honors College__
+B.S. in Human Physiology, 2017
 
-`1995 - 1997`
-__University Name__
-Degree Awarded 
+
 
 ## Awards
 
-`2012`
-Name of Award, Organization 
+`2014`
+Queen of naps
 
 ## Publications
 
@@ -50,10 +48,11 @@ Presentation Title, Conference, <a href="https://MyWebsite.tld/presentation1">Li
 ## Occupation
 
 `Current`
-__Current Job Title__, Current Employer 
+__Student__, Current Employer 
 
-- Task
-- Task
+- read papers
+- do homework
+- cry
 
 `1994-1996`
 __Current Job Title__, Current Employer 
