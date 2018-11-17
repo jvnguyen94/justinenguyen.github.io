@@ -8,10 +8,10 @@ logo: # filename of a logo image that has been placed into your images directory
 owner:
   name: Justine Nguyen
   avatar: bio-photo.jpg
-  bio: "This is a sample Jekyll academic website."
+  bio: ""
   email: nguyjust@ohsu.edu
   # Do not include the @ symbol in your Twitter username
-  twitter: laderast
+  twitter: jvnguyen4
   linkedin: 
   github: jvnguyen94
   orcid: # ID Number (ex. 0000-0000-0000-0000)
