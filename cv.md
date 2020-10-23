@@ -1,17 +1,25 @@
 ---
 layout: resume
 ---
+
 ## Currently
 
-Mega potato in graduate school
+Bioinformatics and Computational Biology (BCB) PhD student in Department of Medical Informatics and Clinical Epidimiology (DMICE) at Oregon Health & Science University (OHSU) 
+
+<br>
 
 ## Education
 
-`1990 - 1994`
-__University of Oregon Clark Honors College__
-B.S. in Human Physiology, 2017
+`2018-2020`  
+__Oregon Health & Science University__   
+M.S. in Bioinformatics & Computational Biology
 
 
+`2013-2017`  
+__University of Oregon, Robert D. Clark Honors College__   
+B.S. in Human Physiology, Minor in Chemistry and Biology  
+
+<br>
 
 ## Awards
 
@@ -47,18 +55,7 @@ Presentation Title, Conference, <a href="https://MyWebsite.tld/presentation1">Li
 
 ## Occupation
 
-`Current`
-__Student__, Current Employer 
 
-- read papers
-- do homework
-- cry
-
-`1994-1996`
-__Current Job Title__, Current Employer 
-
-- Task
-- Task
 
 
 

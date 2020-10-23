@@ -1,12 +1,21 @@
 ---
-layout: page
-excerpt: "About Me..."
+
+Bioinformatics and Computational Biomedicine PhD student in Department of Medical Informatics and Clinical Epidemiology (DMICE) at Oregon Health & Science University (OHSU)
+
+Portland, Oregon
+
 ---
 
-I am a academic, hear me roar. I am NOT an Assistant Professor at Oregon Health & Science University.
+## Current Interests
 
-## Current Interests and Projects:
+- Systems Biology  
+- Microbiome  
 
-- Website Design
-- [GitHub Pages](http://laderast.github.io)
-- Academia
+---
+
+
+## Current Projects
+
+- predicting novel bacterial OTU proteins leveraging primary amino acid sequences through machine learning  
+- packaging IgA-seq package via R  
+
