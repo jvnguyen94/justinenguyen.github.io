@@ -2,8 +2,6 @@
 layout: resume
 ---
 
-## Currently
-
 Bioinformatics and Computational Biology (BCB) PhD student in Department of Medical Informatics and Clinical Epidimiology (DMICE) at Oregon Health & Science University (OHSU) 
 
 <br>
@@ -24,27 +22,6 @@ B.S. in Human Physiology, Minor in Chemistry and Biology
 ## Awards
 
 `2014`
-Queen of naps
-
-## Publications
-
-<!-- A list is also available [online](https://scholar.google.co.uk/citations?user=LTOTl0YAAAAJ) -->
-
-### Journals
-
-`1994`
-Article Title, Journal Title
-
-`1994`
-Article Title, Journal Title
-
-### Books
-
-`1994`
-Book Title, Journal Title
-
-`1994`
-Book Title, Journal Title
 
 
 ## Presentations

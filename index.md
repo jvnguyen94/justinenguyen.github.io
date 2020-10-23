@@ -1,5 +1,5 @@
 ---
-
+layout: page
 ---
 Bioinformatics and Computational Biomedicine PhD student in Department of Medical Informatics and Clinical Epidemiology (DMICE) at Oregon Health & Science University (OHSU)
 
