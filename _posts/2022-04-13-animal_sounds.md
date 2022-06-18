@@ -45,7 +45,7 @@ From this visualization we see that the x-axis has age in months running across 
 
 **Color:** Color can be used to break down categorical variables into subgroups. This is shown by the different lines that are in different colors. However, since yellow is a difficult color to see, I outline the points in black so that the data is not lost against the white background.
 
-**Composition:** The composition of the graph can help make the point of your figure. If the differences amongst the groups are nuanced, you may not want to use an absolute scale for the numerical axis. However, if you do this, you need to be conscientious in making it clear that the axis is altered. The plot has no gridlines so we can clearly see all the means and the line trends for each of the sounds.
+**Composition:** The composition of the graph can help make the point of your figure. If the differences amongst the groups are nuanced, you may not want to use an absolute scale for the numerical axis. However, if you do this, you need to be conscientious in making it clear that the axis is altered. The plot has very feint gridlines so we can clearly see all the means and the line trends for each of the sounds, but if we needed to look at the absolute proprotion, it is easy to trace it back to the y-axis to obtain a value by eye.
 
 <br>
 
