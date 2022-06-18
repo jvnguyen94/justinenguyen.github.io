@@ -8,6 +8,9 @@ Bioinformatics and Computational Biology (BCB) PhD student in Department of Medi
 <br>
 
 ## Education
+`2020-2024`  
+__Oregon Health & Science University__   
+PhD in Bioinformatics & Computational Biology
 
 `2018-2020`  
 __Oregon Health & Science University__   
@@ -20,18 +23,6 @@ B.S. in Human Physiology, Minor in Chemistry and Biology
 
 <br>
 
-## Awards
-
-`2014`
-
-
-## Presentations
-
-`1994`
-Presentation Title, Conference, <a href="https://MyWebsite.tld/presentation1">Link to Presentation</a>
-
-
-## Occupation
 
 
 
