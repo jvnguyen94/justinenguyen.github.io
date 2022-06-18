@@ -2,7 +2,7 @@
 layout: page
 ---
 <center>
-Bioinformatics and Computational Biomedicine (BCB) PhD student in   
+Bioinformatics and Computational Biomedicine (BCB) PhD candidate in   
 Department of Medical Informatics and Clinical Epidemiology (DMICE) at   
 Oregon Health & Science University (OHSU)
 
@@ -12,10 +12,6 @@ Portland, Oregon
 </center>
 ---
 
-## Current Interests
-
-- Systems Biology  
-- Microbiome  
 
 ---
 
