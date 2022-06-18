@@ -11,56 +11,47 @@ category: blog
 
 #### 1) Description of Type of Graph
 
-This is a bar chart or bar graph, which is good for comparing numerical data over time or amongst various groups.
+This is a line graph, which is good for comparing two numerical variables. Typically, we use line graphs when there is a correlation or continuation of the values on the x-axis.
 
 <br>
 
 #### 2) Description of Data
 
-The data in the visualization is from Nathan Yau's hot dog contest. This was curated by Jackie Wirz and Steven Bedrick, both of whom ported the data into R and did some minor clean up before it was loaded to be visualized. This data depicts male data for the hot dog eating contest. It has information of hot dogs eaten per year, who won, and the person's organizational affiliation.
+The data is from the `sounds` dataset which is from the `wordbankr` database on R. This has information on development of children's vocabulary. We have information on individual children and when they were able to produce each sound.
 
 <br>
 
 #### 3) Audience and Purpose
 
-The purpose of this visualization is to show how hot dog eating contests have become popular over the years. On top of that, we wanted to see winners of hot dog eating contests were MLE/IFOCE member. The audience of this visualization is for anyone who is interested in how hot dog eating contests have been popularized over the year and how hot dog associations tracked with hot dog eating competitions' rising popularity.
+The purpose of this visualization is to see how children developed vocabulary through being able to produce these animal sounds. We are interested in seeing which sounds are easier for children and how children were able to improve with each sound over time. The audience for this data set is speech pathologists who are tracking language development in children or parents who are interested in when their kids are able to produce different sounds compared to a benchmark population!
 
 <br>
 
 #### 4) Representation Description
 
-Bar charts typically depict categorical data on one axis and numerical data (counts/proportions) on the other axes. Each of the bars are proportional to each other in measurement to show changes in values amongst different groups in the categorical data. If the bars are going up and down, then the categorical variable is on the x-axis and the y-axis is the numerical data, since the heights of the bars show differences in the values.
-
-Bar charts can become more complex if there are additional subgroups in the categorical data. Differing colors clustered under the same x-axis group can break the main category group down into subgroups. 
+Line charts have numerical data on both x-axis and y-axis. They are good for comparing the relationship between two numerical variables, but also we can overlay single datapoints overlaying a line (mean) to see if the data follows a trend. If there are multiple groups that we want to compare, it is easy to distinguish various groups and show them in a way that makes it easier for comparison.
 
 <br>
 
 #### 5) What to Read and What to Look For
 
-When first reading a bar chart, it is important to take note which direction the bars are facing (are the bars horizontal? or vertical?) When the bars are vertical, the categorical data is on the x-axis. If the bars are horizontal then the categorical data lies on the y-axis. It is a good idea to get oriented with the categorical data to see if it is different groups or if it is different timepoints that are being depicted. 
+When first looking at a line chart, it is important to note the variables on the axes and the scales to which they exist. The next thing to note is how many lines are on the line plot! Typically, when there are multiple lines, this dictates different groups that we are comparing. Usually multiple lines are colored differently or the lines are dashed differently to distinguish the differing groups.
 
-After getting oriented with what is being compared, it is a good idea to look at the opposing axis to see what the measurement value is. At this point, you can use the heights of the bars to see which category has the highest or lowest measurement and compare values across all the groups.
-
-However, reading bar charts can become complex if categories are faceted into two variables. Color can be used to break down subgroups futher to add another comparison within the set groups.
-
-From this visualization we see that the x-axis contains the year from 1981 to 2017. The y-axis shows number of hot dogs consumed from winners from contests at each year. What we can see from this plot is that there is an increase in hot dogs consumed at winning contests, and the number increases as the year increases. Further more, once the MLE/IFOCE were created, there were sharp increases in the number of hot dogs consumed at these contests. 
-<br>
+From this visualization we see that the x-axis has age in months running across the bottom and the proportion of children able to produce the sound is on the y-axis. All the different sounds are different lines with different colors.
 
 #### 6) Presentation Tips
 
-**Annotation:** Annotation can be used to highlight a group of interest in the bargraph. In the example depicted from the NHEC data, we highlighted groups of people who won the hot dog competition for that year. You can see that there is a pattern of who won based on their affiliation. Alternatively, annotation could be used to highlight outliers or a group of interest if it does not pop out with an inital glance on the graph. Some people also use annotation to add statistical significance if p-values are generated by comparing differences in groups.
+**Annotation:** Annotation can be used to highlight each of the sounds. In this case, the annotation is in the legend of the graph. I kept it simple and had minimal annotation because it was easy to use the color to match with the sound in the legend and it is better to minimize text on the graph.
 
-**Color:** Color can be used to break down categorical variables into subgroups. This can allow you to study two categorical variables concurrently against the measurement value. For example, if you were looking at GDP changes across different countries, GDP would be the numerical while countries would be categorical. But you can break down countries into continents subgroup by using different colors to color each continent. With this type of analysis, the subgroups could be laid out side by side, or even stacked on top of each other. It depends what your purpose is... Side by side subgroup break downs would be good for comparing all countries to each other. Stacked would be good for showing the differences in continents, but if you also wanted to show the highest GDP country.
+**Color:** Color can be used to break down categorical variables into subgroups. This is shown by the different lines that are in different colors. However, since yellow is a difficult color to see, I outline the points in black so that the data is not lost against the white background.
 
-**Composition:** The composition of the graph can help make the point of your figure. If the differences amongst the groups are nuanced, you may not want to use an absolute scale for the numerical axis. However, if you do this, you need to be conscientious in making it clear that the axis is altered. Another way to play with compsition for bar charts when bars are faceted by two variables is to add spaces amongst the groups so that it is more clear that there is a distinction in groups based on position AND color.
+**Composition:** The composition of the graph can help make the point of your figure. If the differences amongst the groups are nuanced, you may not want to use an absolute scale for the numerical axis. However, if you do this, you need to be conscientious in making it clear that the axis is altered. The plot has no gridlines so we can clearly see all the means and the line trends for each of the sounds.
 
 <br>
 
 #### 7) Variations and Alternatives
 
-A variation of bar chart is pie charts. Pie charts show part of a whole and are based on proportions. However, our eyes play tricks on us when we are comparing areas rather than heights. It can also be really hard to show your data if you have too many categories in a pie chart.
-
-Line charts are also an alterative to bar charts, but this only works if there is a relationship when moving from one category to the next. This would make sense if you had time dependent data and there is a relationship that could be extrapolated in a manner that makes sense from one category to the next.
+A variation of the line plot is a bar chart. They both are able to show relationships between two numerical variables. However, it is important to note that barcharts take up more space visually than line charts. When choosing between the two, we should think about whether we are comparing amounts at a time point or whether we care about the end value at that time point. This point is clear with the animal sounds data.
 
 <br>
 
@@ -97,4 +88,4 @@ ggplot(sounds, aes(x = age,
 
 ![](/images/animal_sounds_init.png)
 
-Above was the initial plot generated from the data. The bar chart shows the number of hot dogs consumed at winning contests every year, but there is a lot of annotation missing about MLE/IFOCE association. By adding color based on association and labeling it in the final visualization, it is easier to see association. The labels were also changed to be more informative and the title, too, to show what the research question is. I also simplified the graphics to make it look cleaner.
+The initial plot we generated from the data was a bar chart showing how children were able to produce different sounds based on their age. The sounds were initially split up so it was hard to compare whether one sound was more difficult to pronounce at a specific timepoint in the child's life. To rectify this, we overlayed all the sounds onto one plot and used a line graph because we care about the "end point" for the proportion of children that could produce the sound. The bar plot had too much visually and detracted away from what we were trying to show. We did not really care to show total amount, but how the values changed based on sound at that specific time point. The colors chosen for this plot are also very distinguishable from each other so it is easy to compare sounds at a specific time point.
