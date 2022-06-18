@@ -8,7 +8,7 @@ logo: # filename of a logo image that has been placed into your images directory
 owner:
   name: Justine Nguyen
   avatar: bio-photo.jpg
-  bio: Bioinformatics PhD Student
+  bio: Bioinformatics PhD Candidate
   email: nguyjust@ohsu.edu
   # Do not include the @ symbol in your Twitter username
   twitter: justinevnguyen
@@ -22,8 +22,8 @@ owner:
     analytics:
     verify:
     scholar: justine.v.nguyen #id
-  facebook: justine.v.nguyen
-  instagram: justine.nguyen
+  facebook: #justine.v.nguyen
+  instagram: #justine.nguyen
   bing-verify:
   stackoverflow: #123456/username from a "https://stackoverflow.com/users/123456/username" link
   xing: #username
