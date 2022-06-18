@@ -4,6 +4,8 @@ title: NHEC Visualization
 modified: 2022-04-22
 ---
 
+!()[/images/nhec.png]
+
 #### 1) Description of Type of Graph
 
 This is a bar chart or bar graph, which is good for comparing numerical data over time or amongst various groups.
