@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 06-01-2022 Gapminder Visualization Brief
+title: Gapminder Visualization Brief
 tags: [line chart, data brief]
 comments: true
 category: blog
