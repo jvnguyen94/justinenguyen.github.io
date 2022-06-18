@@ -21,6 +21,7 @@ This is a line graph, which is good for comparing two numerical variables. Typic
 #### 2) Description of Data
 
 The data is from the International Trail Running Association (ITRA). It was found on the Tidy Tuesday Github respository: https://github.com/rfordatascience/tidytuesday/tree/master/data/2021/2021-10-26. This data was encompassed in two data tables - one with information pertaining to the race (race id, race name, distance, elevation gained/loss, city, country, date, start time, number of aid stations, participants) and one pertaining to the participants (racer id, rank, runner, time, age, gender, nationality, time). After the data was read in, particpants without a distance or time for completion were removed from the analysis.
+
 <br>
 
 #### 3) Audience and Purpose
@@ -43,22 +44,23 @@ When first looking at a line chart, it is important to note the variables on the
 
 When first reading a scatterplot, it is important to note the two variables being compared in the x-axis and y-axis. It is also important to keep in mind what the scale is for each of the variables. After orienting to the variables being compared, we can examine the scatter points and see if there is a relationship or shape that the data points trend. We can also look to see whether there are data points that are outliers to the general pattern displayed between the variables.
 
-From this visualization 
+From this visualization, we see that for a majority of the distances, women run at a slightly slower pace than men. This conclusion is drawn by looking at the lines showing the means of the paces for each gender at each distance. However, when we look closer at the scatter plot that is overlaid on top, we see that, especially between about 95 to 110 miles, there is a lot of overlap amongst paces between both men and women. On top of that, there is a high skew where we have more information on races greater than 95 miles. The line graph is extrapolating pace information over distances where we do not have a lot of information. If someone plotted just the line graph, it would be clear that men ran faster than women marginally for most distances, however when we look at the raw individual points, not all the individual data support that claim.
 
 <br>
 
 #### 6) Presentation Tips
 
-**Annotation:** 
+**Annotation:** The annotation comes from labelling the genders in the key. 
 
-**Color:** 
+**Color:** The color is used to dictate men versus women. (Could have stepped outside of the blue/pink norm for men/women but opted to use this because there is such a strong societal association. It makes it easier for people to see the differences in gender right away.)
 
-**Composition:** 
+**Composition:** The plot has the gridlines removed so that it would not look so busy against the scatter. The points were also shaded lightly by decreasing the alpha setting so that we could see more of the individual points.
 
 <br>
 
 #### 7) Variations and Alternatives
 
+We could have looked at the scatter plot or the line graph individually, but looking at them together tells us a story about being careful about averaging across data. We need to run statistics to see if there is anything statistically significant between the gender means. The scatter plot helps us to see where there is high concentration of data for each distance. In the future, if I was to continue analyzing this data, I would focus on the higher distances because we have more information for more individuals and our conclusion may be stronger.
 
 
 <br>
@@ -112,9 +114,6 @@ ggplot(full_sum, aes(distance_mi, speed, color=gender)) +
 ````
 
 <br>
-
-
-
 
 #### 9) Initial Plot and Improvements
 
