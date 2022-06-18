@@ -11,56 +11,47 @@ category: blog
 
 #### 1) Description of Type of Graph
 
-This is a bar chart or bar graph, which is good for comparing numerical data over time or amongst various groups.
-
+This is a line graph, which is good for comparing two numerical variables. Typically, we use line graphs when there is a correlation or continuation of the values on the x-axis.
 <br>
 
 #### 2) Description of Data
 
-The data in the visualization is from Nathan Yau's hot dog contest. This was curated by Jackie Wirz and Steven Bedrick, both of whom ported the data into R and did some minor clean up before it was loaded to be visualized. This data depicts male data for the hot dog eating contest. It has information of hot dogs eaten per year, who won, and the person's organizational affiliation.
+The data in the visualization is from the Gapminder dataset, which contains lots of historical data across many different countries from 1952 to 2007. 
 
 <br>
 
 #### 3) Audience and Purpose
 
-The purpose of this visualization is to show how hot dog eating contests have become popular over the years. On top of that, we wanted to see winners of hot dog eating contests were MLE/IFOCE member. The audience of this visualization is for anyone who is interested in how hot dog eating contests have been popularized over the year and how hot dog associations tracked with hot dog eating competitions' rising popularity.
+The purpose of this visualization is to see if there is a correlation between fertility rate versus life expectancy in different regions of Asia in 1994 (arbitrarily picked year). Typically we see that fertility rate decreases as life expectancy increases. The audience for this could be anyone interested in socio-economics. 
 
 <br>
 
 #### 4) Representation Description
 
-Bar charts typically depict categorical data on one axis and numerical data (counts/proportions) on the other axes. Each of the bars are proportional to each other in measurement to show changes in values amongst different groups in the categorical data. If the bars are going up and down, then the categorical variable is on the x-axis and the y-axis is the numerical data, since the heights of the bars show differences in the values.
-
-Bar charts can become more complex if there are additional subgroups in the categorical data. Differing colors clustered under the same x-axis group can break the main category group down into subgroups. 
+Line charts have numerical data on both x-axis and y-axis. They are good for comparing the relationship between two numerical variables, but also we can overlay single datapoints overlaying a line (mean) to see if the data follows a trend. If there are multiple groups that we want to compare, it is easy to distinguish various groups and show them in a way that makes it easier for comparison.
 
 <br>
 
 #### 5) What to Read and What to Look For
 
-When first reading a bar chart, it is important to take note which direction the bars are facing (are the bars horizontal? or vertical?) When the bars are vertical, the categorical data is on the x-axis. If the bars are horizontal then the categorical data lies on the y-axis. It is a good idea to get oriented with the categorical data to see if it is different groups or if it is different timepoints that are being depicted. 
+When first looking at a line chart, it is important to note the variables on the axes and the scales to which they exist. The next thing to note is how many lines are on the line plot! Typically, when there are multiple lines, this dictates different groups that we are comparing. Usually multiple lines are colored differently or the lines are dashed differently to distinguish the differing groups.
 
-After getting oriented with what is being compared, it is a good idea to look at the opposing axis to see what the measurement value is. At this point, you can use the heights of the bars to see which category has the highest or lowest measurement and compare values across all the groups.
-
-However, reading bar charts can become complex if categories are faceted into two variables. Color can be used to break down subgroups futher to add another comparison within the set groups.
-
-From this visualization we see that the x-axis contains the year from 1981 to 2017. The y-axis shows number of hot dogs consumed from winners from contests at each year. What we can see from this plot is that there is an increase in hot dogs consumed at winning contests, and the number increases as the year increases. Further more, once the MLE/IFOCE were created, there were sharp increases in the number of hot dogs consumed at these contests. 
+From this visualization, we see that Life expectancy is plotted on the x-axis while Fertility rate per 1000 is plotted on the y-axis. The regions of Asia are distinguished by dash types and colors. (I could not figure out how to combine the legends into a singular one... If I did that, the visualization will be better and less busy looking.) As you can see, there is a general trend of decreased fertility rate with countries that have higher life expectancy. 
 <br>
 
 #### 6) Presentation Tips
 
-**Annotation:** Annotation can be used to highlight a group of interest in the bargraph. In the example depicted from the NHEC data, we highlighted groups of people who won the hot dog competition for that year. You can see that there is a pattern of who won based on their affiliation. Alternatively, annotation could be used to highlight outliers or a group of interest if it does not pop out with an inital glance on the graph. Some people also use annotation to add statistical significance if p-values are generated by comparing differences in groups.
+**Annotation:** Annotation was used to highlight the different regions within Asia. Perhaps the most important annotation is in the title because it tells you that we are looking at the relationship between fertility and life expectancy. The subtitle tells us that we are looking at regions of Asia in the year 1994.
 
-**Color:** Color can be used to break down categorical variables into subgroups. This can allow you to study two categorical variables concurrently against the measurement value. For example, if you were looking at GDP changes across different countries, GDP would be the numerical while countries would be categorical. But you can break down countries into continents subgroup by using different colors to color each continent. With this type of analysis, the subgroups could be laid out side by side, or even stacked on top of each other. It depends what your purpose is... Side by side subgroup break downs would be good for comparing all countries to each other. Stacked would be good for showing the differences in continents, but if you also wanted to show the highest GDP country.
+**Color:** Color can be used to break down categorical variables into subgroups. This can allow you to study two categorical variables concurrently against the measurement value. Here we are using color to distinguish different regions of Asia.
 
-**Composition:** The composition of the graph can help make the point of your figure. If the differences amongst the groups are nuanced, you may not want to use an absolute scale for the numerical axis. However, if you do this, you need to be conscientious in making it clear that the axis is altered. Another way to play with compsition for bar charts when bars are faceted by two variables is to add spaces amongst the groups so that it is more clear that there is a distinction in groups based on position AND color.
+**Composition:** There are a lot of regions of Asia, so the lines begin to make the plot look busy. I took out the gridlines so that we can focus on the data solely.
 
 <br>
 
 #### 7) Variations and Alternatives
 
-A variation of bar chart is pie charts. Pie charts show part of a whole and are based on proportions. However, our eyes play tricks on us when we are comparing areas rather than heights. It can also be really hard to show your data if you have too many categories in a pie chart.
-
-Line charts are also an alterative to bar charts, but this only works if there is a relationship when moving from one category to the next. This would make sense if you had time dependent data and there is a relationship that could be extrapolated in a manner that makes sense from one category to the next.
+A variation of the line plot is a bar chart. They both are able to show relationships between two numerical variables. However, it is important to note that barcharts take up more space visually than line charts. When choosing between the two, we should think about whether we are comparing amounts at a time point or whether we care about the end value at that time point. 
 
 <br>
 
@@ -100,4 +91,4 @@ good_gap
 
 ![](/images/gap_asia_init.png)
 
-Above was the initial plot generated from the data. The bar chart shows the number of hot dogs consumed at winning contests every year, but there is a lot of annotation missing about MLE/IFOCE association. By adding color based on association and labeling it in the final visualization, it is easier to see association. The labels were also changed to be more informative and the title, too, to show what the research question is. I also simplified the graphics to make it look cleaner.
+Above was the initial plot generated from the data. The line chart with default colors makes it hard to distinguish the different regions of Asia, especially when it is in a grayscale (printed black and white for example!) To overcome this barrier, I added another legend where we use different dash line types to distinguish the various regions. I also took out the gridlines because there are so many different regions we are comparing.
