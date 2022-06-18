@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 04-13-2022 Animal Sounds Visualization
+title: Animal Sounds Visualization
 tags: [line chart, data brief]
 comments: true
 category: blog
