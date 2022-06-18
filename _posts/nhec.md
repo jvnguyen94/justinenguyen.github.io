@@ -2,8 +2,6 @@
 layout: post
 title: NHEC Visualization
 modified: 2022-04-22
-comments: true
-category: blog
 ---
 
 #### 1) Description of Type of Graph
