@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 06-08-2022 Ultra Running Visualization Brief
+title: Ultra Running Visualization Brief
 tags: [line chart, data brief]
 comments: true
 category: blog
