@@ -118,4 +118,9 @@ ggplot(full_sum, aes(distance_mi, speed, color=gender)) +
 #### 9) Initial Plot and Improvements
 
 ![](/images/running_init.png)
+
+In the initial plot, we only see the averages of the men versus women in terms of paces over distances. The plot is unclean. Axis labels are uninformative. 
+
 ![](/images/running_line.png)
+
+In this version, the graph is cleaned up so the aesthetics look cleaner. However, we only see the line plot, which only tells one side of the story! An improvement for the final plot was adding in the scatter plot on top of the line plot.
