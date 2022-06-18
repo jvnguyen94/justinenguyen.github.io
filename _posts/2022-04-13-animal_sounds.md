@@ -8,7 +8,7 @@ category: blog
 ---
 
 
-![](/images/animal.png)
+![](/images/animal_sounds.png)
 
 #### 1) Description of Type of Graph
 
@@ -61,53 +61,27 @@ Line charts are also an alterative to bar charts, but this only works if there i
 #### 7) How to Create the Graph 
 
 ````{r, eval=F}
-## Read in data for affiliated
-hdm_affiliate <- read_csv(here::here("data", "hot_dog_contest_with_affiliation.csv"), 
-    ## Dictate columns as factors                  
-    col_types = cols(
-      affiliated = col_factor(levels = NULL), 
-      gender = col_factor(levels = NULL)
-      )) %>% 
-  ## Grab 1997 and after for year
-  mutate(post_ifoce = year >= 1997) %>% 
-  ## And grab all male data
-  filter(year >= 1981 & gender == "male")
+## Read in data
+sounds <- read.csv(here::here("data", "animal_sounds_summary.csv"))
 
-affil_plot <- ggplot(hdm_affiliate, aes(x = year, y = num_eaten)) + 
-  geom_col(aes(fill = affiliated), color = "white") +
-  scale_fill_manual(values= c('#E9602B','#2277A0','#CCB683'), 
-                     name = "IFOCE-affiliation") +
-  xlab("Year") +
-  ylab("Hot Dogs and Buns Consumed") +
-  ggtitle("Nathan's Hot Dog Eating Contest Results, 1981-2017") 
+## Control the factor order of the sounds
+fct_reorder2(as.factor(sounds$sound), ## sound becomes factor
+             sounds$age, ## x var
+             sounds$prop_produce) %>% ## y var
+  levels ## Grab the distinct levels producted
+  
+  ggplot(sounds, aes(x = age, 
+                   y = prop_produce, 
+                   fill = fct_reorder2(sound, age, prop_produce))) +
+  geom_smooth(aes(color = fct_reorder2(sound, age, prop_produce)),
+              se = FALSE, lwd = .5, show.legend = FALSE) +
+  geom_point(size = 2, shape = 21, color = "midnightblue") +
+  labs(x = "Age (months)", 
+       y = "Proportion of Children Producing", 
+       fill = "sound") +
+  scale_fill_viridis(discrete = TRUE) +
+  scale_color_viridis(discrete = TRUE) +
+  theme_bw()
 
-affil_plot <- affil_plot + 
-  theme(plot.title = element_text(hjust = 0.5), 
-        axis.text = element_text(size = 12), 
-        panel.background = element_blank(),
-        axis.line.x = element_line(color = "gray80", size = 0.5), 
-        axis.ticks = element_line(color="gray80", size=0.5))
-
-affil_plot_anno <- affil_plot + guides(fill = FALSE) +
-  coord_cartesian(xlim = c(1980, 2022), ylim = c(0, 90)) +
-  annotate('segment', x=1980.75, xend=2000.25, y= 30, yend=30, size=0.5, color="#CCB683")+
-  annotate('segment', x=1980.75, xend=1980.75, y= 30, yend=28, size=0.5, color="#CCB683") +
-  annotate('segment', x=2000.25, xend=2000.25, y= 30, yend=28, size=0.5, color="#CCB683") +
-  annotate('segment', x=1990, xend=1990, y= 33, yend=30, size=0.5, color="#CCB683") +
-  annotate('text', x=1990, y=36, label="No MLE/IFOCE Affiliation", color="#CCB683", 
-           family="Lato", hjust=0.5, size = 3) +
-  annotate('segment', x=2000.75, xend=2006.25, y= 58, yend=58, size=0.5, color="#2277A0") +
-  annotate('segment', x=2000.75, xend=2000.75, y= 58, yend=56, size=0.5, color="#2277A0") +
-  annotate('segment', x=2006.25, xend=2006.25, y= 58, yend=56, size=0.5, color="#2277A0") +
-  annotate('segment', x=2003.5, xend=2003.5, y= 61, yend=58, size=0.5, color="#2277A0") +
-  annotate('text', x=2003.5, y=65, label="MLE/IFOCE\nFormer Member", color="#2277A0", 
-           family="Lato", hjust=0.5, size = 3) +
-  annotate('segment', x=2006.75, xend=2017.25, y= 79, yend=79, size=0.5, color="#E9602B") +
-  annotate('segment', x=2006.75, xend=2006.75, y= 79, yend=77, size=0.5, color="#E9602B") +
-  annotate('segment', x=2017.25, xend=2017.25, y= 79, yend=77, size=0.5, color="#E9602B") +
-  annotate('segment', x=2012, xend=2012, y= 82, yend=79, size=0.5, color="#E9602B") +
-  annotate('text', x=2012, y=86, label="MLE/IFOCE Current Member", color="#E9602B", 
-           family="Lato", hjust=0.5, size = 3)
-affil_plot_anno
 ````
 
