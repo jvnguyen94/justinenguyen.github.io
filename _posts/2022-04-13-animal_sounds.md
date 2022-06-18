@@ -6,6 +6,7 @@ comments: true
 category: blog
 ---
 
+<br>
 
 ![](/images/animal_sounds.png)
 
