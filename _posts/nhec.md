@@ -1,8 +1,12 @@
 ---
 layout: post
 title: NHEC Visualization
-modified: 2022-04-22
+modified: 4/22/2022
+tags: []
+comments: true
+category: blog
 ---
+
 
 !()[/images/nhec.png]
 
