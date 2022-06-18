@@ -6,7 +6,11 @@ comments: true
 category: blog
 ---
 
+<br>
+
 ![](/images/running_line_point.png)
+
+<br>
 
 #### 1) Description of Type of Graph
 
@@ -40,6 +44,8 @@ When first looking at a line chart, it is important to note the variables on the
 When first reading a scatterplot, it is important to note the two variables being compared in the x-axis and y-axis. It is also important to keep in mind what the scale is for each of the variables. After orienting to the variables being compared, we can examine the scatter points and see if there is a relationship or shape that the data points trend. We can also look to see whether there are data points that are outliers to the general pattern displayed between the variables.
 
 From this visualization 
+
+<br>
 
 #### 6) Presentation Tips
 
