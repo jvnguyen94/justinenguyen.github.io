@@ -60,7 +60,7 @@ Line charts are also an alterative to bar charts, but this only works if there i
 
 #### 7) How to Create the Graph 
 
-````{r, eval=F}
+````
 ## Read in data
 sounds <- read.csv(here::here("data", "animal_sounds_summary.csv"))
 
