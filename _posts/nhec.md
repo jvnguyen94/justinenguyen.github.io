@@ -1,7 +1,7 @@
 ---
 layout: post
 title: NHEC Visualization
-modified: 2022-04-22 20:41:38
+modified: 2022-04-22
 comments: true
 category: blog
 ---
