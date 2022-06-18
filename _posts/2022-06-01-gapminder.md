@@ -15,6 +15,7 @@ category: blog
 #### 1) Description of Type of Graph
 
 This is a line graph, which is good for comparing two numerical variables. Typically, we use line graphs when there is a correlation or continuation of the values on the x-axis.
+
 <br>
 
 #### 2) Description of Data
