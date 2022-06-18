@@ -1,0 +1,184 @@
+---
+title: "Visualization Projects"
+output:
+  html_document:
+    toc: true
+    toc_float: true
+    toc_collapsed: true
+    toc_depth: 1
+    theme: lumen
+---
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+library(tidyverse)
+library(extrafont)
+library(here)
+library(ggthemes)
+```
+
+<br>
+
+# Visualization Overview
+
+This page is dedicated to visualizations of all types of data! Each section has a visualization brief, including the graphic and some analysis on the process.
+
+<br> <br>
+
+# NHEC Visualization Brief - Bar charts
+
+<br>
+
+```{r, echo=F, warning=F, message=F}
+## Read in data for affiliated
+hdm_affiliate <- read_csv(here::here("data", "hot_dog_contest_with_affiliation.csv"), 
+    ## Dictate columns as factors                  
+    col_types = cols(
+      affiliated = col_factor(levels = NULL), 
+      gender = col_factor(levels = NULL)
+      )) %>% 
+  ## Grab 1997 and after for year
+  mutate(post_ifoce = year >= 1997) %>% 
+  ## And grab all male data
+  filter(year >= 1981 & gender == "male")
+
+affil_plot <- ggplot(hdm_affiliate, aes(x = year, y = num_eaten)) + 
+  geom_col(aes(fill = affiliated), color = "white") +
+  scale_fill_manual(values= c('#E9602B','#2277A0','#CCB683'), 
+                     name = "IFOCE-affiliation") +
+  xlab("Year") +
+  ylab("Hot Dogs and Buns Consumed") +
+  ggtitle("Nathan's Hot Dog Eating Contest Results, 1981-2017") 
+
+affil_plot <- affil_plot + 
+  theme(plot.title = element_text(hjust = 0.5), 
+        axis.text = element_text(size = 12), 
+        panel.background = element_blank(),
+        axis.line.x = element_line(color = "gray80", size = 0.5), 
+        axis.ticks = element_line(color="gray80", size=0.5))
+
+affil_plot_anno <- affil_plot + guides(fill = FALSE) +
+  coord_cartesian(xlim = c(1980, 2022), ylim = c(0, 90)) +
+  annotate('segment', x=1980.75, xend=2000.25, y= 30, yend=30, size=0.5, color="#CCB683")+
+  annotate('segment', x=1980.75, xend=1980.75, y= 30, yend=28, size=0.5, color="#CCB683") +
+  annotate('segment', x=2000.25, xend=2000.25, y= 30, yend=28, size=0.5, color="#CCB683") +
+  annotate('segment', x=1990, xend=1990, y= 33, yend=30, size=0.5, color="#CCB683") +
+  annotate('text', x=1990, y=36, label="No MLE/IFOCE Affiliation", color="#CCB683", 
+           family="Lato", hjust=0.5, size = 3) +
+  annotate('segment', x=2000.75, xend=2006.25, y= 58, yend=58, size=0.5, color="#2277A0") +
+  annotate('segment', x=2000.75, xend=2000.75, y= 58, yend=56, size=0.5, color="#2277A0") +
+  annotate('segment', x=2006.25, xend=2006.25, y= 58, yend=56, size=0.5, color="#2277A0") +
+  annotate('segment', x=2003.5, xend=2003.5, y= 61, yend=58, size=0.5, color="#2277A0") +
+  annotate('text', x=2003.5, y=65, label="MLE/IFOCE\nFormer Member", color="#2277A0", 
+           family="Lato", hjust=0.5, size = 3) +
+  annotate('segment', x=2006.75, xend=2017.25, y= 79, yend=79, size=0.5, color="#E9602B") +
+  annotate('segment', x=2006.75, xend=2006.75, y= 79, yend=77, size=0.5, color="#E9602B") +
+  annotate('segment', x=2017.25, xend=2017.25, y= 79, yend=77, size=0.5, color="#E9602B") +
+  annotate('segment', x=2012, xend=2012, y= 82, yend=79, size=0.5, color="#E9602B") +
+  annotate('text', x=2012, y=86, label="MLE/IFOCE Current Member", color="#E9602B", 
+           family="Lato", hjust=0.5, size = 3)
+affil_plot_anno
+```
+
+<br>
+
+#### 1) Description of Type of Graph
+
+This is a bar chart or bar graph, which is good for comparing numerical data over time or amongst various groups.
+
+<br>
+
+#### 2) Description of Data
+
+The data in the visualization is from Nathan Yau's hot dog contest. This was curated by Jackie Wirz and Steven Bedrick, both of whom ported the data into R and did some minor clean up before it was loaded to be visualized. This data depicts male data for the hot dog eating contest. It has information of hot dogs eaten per year, who won, and the person's organizational affiliation.
+
+<br>
+
+#### 3) Representation Description
+
+Bar charts typically depict categorical data on one axis and numerical data (counts/proportions) on the other axes. Each of the bars are proportional to each other in measurement to show changes in values amongst different groups in the categorical data. If the bars are going up and down, then the categorical variable is on the x-axis and the y-axis is the numerical data, since the heights of the bars show differences in the values.
+
+Bar charts can become more complex if there are additional subgroups in the categorical data. Differing colors clustered under the same x-axis group can break the main category group down into subgroups. 
+
+<br>
+
+#### 4) What to Read and What to Look For
+
+When first reading a bar chart, it is important to take note which direction the bars are facing (are the bars horizontal? or vertical?) When the bars are vertical, the categorical data is on the x-axis. If the bars are horizontal then the categorical data lies on the y-axis. It is a good idea to get oriented with the categorical data to see if it is different groups or if it is different timepoints that are being depicted. 
+
+After getting oriented with what is being compared, it is a good idea to look at the opposing axis to see what the measurement value is. At this point, you can use the heights of the bars to see which category has the highest or lowest measurement and compare values across all the groups.
+
+However, reading bar charts can become complex if categories are faceted into two variables. Color can be used to break down subgroups futher to add another comparison within the set groups.
+
+<br>
+
+#### 5) Presentation Tips
+
+**Annotation:** Annotation can be used to highlight a group of interest in the bargraph. In the example depicted from the NHEC data, we highlighted groups of people who won the hot dog competition for that year. You can see that there is a pattern of who won based on their affiliation. Alternatively, annotation could be used to highlight outliers or a group of interest if it does not pop out with an inital glance on the graph. Some people also use annotation to add statistical significance if p-values are generated by comparing differences in groups.
+
+**Color:** Color can be used to break down categorical variables into subgroups. This can allow you to study two categorical variables concurrently against the measurement value. For example, if you were looking at GDP changes across different countries, GDP would be the numerical while countries would be categorical. But you can break down countries into continents subgroup by using different colors to color each continent. With this type of analysis, the subgroups could be laid out side by side, or even stacked on top of each other. It depends what your purpose is... Side by side subgroup break downs would be good for comparing all countries to each other. Stacked would be good for showing the differences in continents, but if you also wanted to show the highest GDP country.
+
+**Composition:** The composition of the graph can help make the point of your figure. If the differences amongst the groups are nuanced, you may not want to use an absolute scale for the numerical axis. However, if you do this, you need to be conscientious in making it clear that the axis is altered. Another way to play with compsition for bar charts when bars are faceted by two variables is to add spaces amongst the groups so that it is more clear that there is a distinction in groups based on position AND color.
+
+<br>
+
+#### 6) Variations and Alternatives
+
+A variation of bar chart is pie charts. Pie charts show part of a whole and are based on proportions. However, our eyes play tricks on us when we are comparing areas rather than heights. It can also be really hard to show your data if you have too many categories in a pie chart.
+
+Line charts are also an alterative to bar charts, but this only works if there is a relationship when moving from one category to the next. This would make sense if you had time dependent data and there is a relationship that could be extrapolated in a manner that makes sense from one category to the next.
+
+<br>
+
+#### 7) How to Create the Graph 
+
+```{r, eval=F}
+## Read in data for affiliated
+hdm_affiliate <- read_csv(here::here("data", "hot_dog_contest_with_affiliation.csv"), 
+    ## Dictate columns as factors                  
+    col_types = cols(
+      affiliated = col_factor(levels = NULL), 
+      gender = col_factor(levels = NULL)
+      )) %>% 
+  ## Grab 1997 and after for year
+  mutate(post_ifoce = year >= 1997) %>% 
+  ## And grab all male data
+  filter(year >= 1981 & gender == "male")
+
+affil_plot <- ggplot(hdm_affiliate, aes(x = year, y = num_eaten)) + 
+  geom_col(aes(fill = affiliated), color = "white") +
+  scale_fill_manual(values= c('#E9602B','#2277A0','#CCB683'), 
+                     name = "IFOCE-affiliation") +
+  xlab("Year") +
+  ylab("Hot Dogs and Buns Consumed") +
+  ggtitle("Nathan's Hot Dog Eating Contest Results, 1981-2017") 
+
+affil_plot <- affil_plot + 
+  theme(plot.title = element_text(hjust = 0.5), 
+        axis.text = element_text(size = 12), 
+        panel.background = element_blank(),
+        axis.line.x = element_line(color = "gray80", size = 0.5), 
+        axis.ticks = element_line(color="gray80", size=0.5))
+
+affil_plot_anno <- affil_plot + guides(fill = FALSE) +
+  coord_cartesian(xlim = c(1980, 2022), ylim = c(0, 90)) +
+  annotate('segment', x=1980.75, xend=2000.25, y= 30, yend=30, size=0.5, color="#CCB683")+
+  annotate('segment', x=1980.75, xend=1980.75, y= 30, yend=28, size=0.5, color="#CCB683") +
+  annotate('segment', x=2000.25, xend=2000.25, y= 30, yend=28, size=0.5, color="#CCB683") +
+  annotate('segment', x=1990, xend=1990, y= 33, yend=30, size=0.5, color="#CCB683") +
+  annotate('text', x=1990, y=36, label="No MLE/IFOCE Affiliation", color="#CCB683", 
+           family="Lato", hjust=0.5, size = 3) +
+  annotate('segment', x=2000.75, xend=2006.25, y= 58, yend=58, size=0.5, color="#2277A0") +
+  annotate('segment', x=2000.75, xend=2000.75, y= 58, yend=56, size=0.5, color="#2277A0") +
+  annotate('segment', x=2006.25, xend=2006.25, y= 58, yend=56, size=0.5, color="#2277A0") +
+  annotate('segment', x=2003.5, xend=2003.5, y= 61, yend=58, size=0.5, color="#2277A0") +
+  annotate('text', x=2003.5, y=65, label="MLE/IFOCE\nFormer Member", color="#2277A0", 
+           family="Lato", hjust=0.5, size = 3) +
+  annotate('segment', x=2006.75, xend=2017.25, y= 79, yend=79, size=0.5, color="#E9602B") +
+  annotate('segment', x=2006.75, xend=2006.75, y= 79, yend=77, size=0.5, color="#E9602B") +
+  annotate('segment', x=2017.25, xend=2017.25, y= 79, yend=77, size=0.5, color="#E9602B") +
+  annotate('segment', x=2012, xend=2012, y= 82, yend=79, size=0.5, color="#E9602B") +
+  annotate('text', x=2012, y=86, label="MLE/IFOCE Current Member", color="#E9602B", 
+           family="Lato", hjust=0.5, size = 3)
+affil_plot_anno
+```
+
