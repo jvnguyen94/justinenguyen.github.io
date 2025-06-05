@@ -1,5 +1,6 @@
 ---
 layout: resume
+title: Resume
 ---
 
 <a href="/assets/Justine_Nguyen_Resume.pdf" download style="padding:10px 15px; background:#2E8B57; color:white; text-decoration:none; border-radius:5px;">
