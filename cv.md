@@ -15,7 +15,7 @@ Download My Resume (PDF)
 **Oregon Health & Science University**  
 PhD in Bioinformatics & Computational Biomedicine  
 August 2025 (expected)  
-- Dissertation: *Structural Prediction and Understanding of Ubiquitination Sites*
+- Dissertation: *Structural Prediction and Understanding of Ubiquitination Sites *
 
 **Oregon Health & Science University**  
 M.S. in Bioinformatics & Computational Biomedicine  
