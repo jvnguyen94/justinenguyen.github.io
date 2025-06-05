@@ -4,7 +4,7 @@ layout: resume
 
 
 ## Education
-`2020-2024`  
+`2020-2025`  
 __Oregon Health & Science University__   
 PhD in Bioinformatics & Computational Biology
 
