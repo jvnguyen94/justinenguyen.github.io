@@ -21,7 +21,7 @@ jobs:
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '2.7'
+          ruby-version: '3.1'
 
       - name: Install Bundler and Dependencies
         run: |
@@ -41,8 +41,9 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: github-pages
-      # No protection rules or approvals!
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
