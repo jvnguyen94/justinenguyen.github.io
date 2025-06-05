@@ -1,64 +1,38 @@
-# Site wide configuration
-
-title: #Justine Nguyen 
+title: "Justine Nguyen"
 locale: en_US
-logo: # filename of a logo image that has been placed into your images directory
+logo:
 
-# Enter the following platform usernames if you would like for them to appear on your site.
 owner:
   name: Justine Nguyen
   avatar: bio-photo.jpg
   bio: Bioinformatics PhD Candidate
   email: justine.v.nguyen@gmail.com
-  # Do not include the @ symbol in your Twitter username
-  twitter: #justinevnguyen
+  twitter:
   linkedin: justinevnguyen
   github: jvnguyen94
-  orcid: 0000-0001-9739-5261 # ID Number (ex. 0000-0000-0000-0000)
-  researchgate: Justine_Nguyen2 #username
-  mendeley: #username
-  google: 
-    plus: 
-    analytics:
-    verify:
-    scholar: justine.v.nguyen #id
-  facebook: #justine.v.nguyen
-  instagram: #justine.nguyen
-  bing-verify:
-  stackoverflow: #123456/username from a "https://stackoverflow.com/users/123456/username" link
-  xing: #username
-  lastfm: #username
-  tumblr: #username
-  pinterest: #username
-  foursquare: #username
-  steam: #username
-  dribbble: #username
-  youtube: #username
-  soundcloud: #username
-  weibo: #username
-  flickr: #username
-  codepen: #username
-  disqus-shortname:
+  orcid: 0000-0001-9739-5261
+  researchgate: Justine_Nguyen2
+  google:
+    scholar: justine.v.nguyen
+  facebook:
+  instagram:
+  stackoverflow:
+  youtube:
 
-# The following adjust the accents for your site. If you would like to further edit colors, fonts, font sizes, etc.
-# you may do so in _sass/variables.scss
 highlight-color: '#000'
 lowlight-color: '#81B3DE'
 
-  # NOTE: If you would like your site to be licensed under a creative commons license, uncomment the 'yes' next to the type of license you wish to use.
 creative-commons:
   cc-by: yes
-  cc-by-nc: yes
 
-#DO NOT EDIT BEYOND THIS POINT
-# Jekyll configuration
-
-permalink:   /:categories/:title/
-markdown:    kramdown
+permalink: /:categories/:title/
+markdown: kramdown
 highlighter: rouge
+
 sass:
   sass_dir: _sass
   style: compressed
+
 plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
@@ -71,4 +45,24 @@ kramdown:
   enable_coderay: false
 
 include: [".htaccess"]
-exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
+exclude:
+  - lib
+  - config.rb
+  - Capfile
+  - config
+  - log
+  - Rakefile
+  - Rakefile.rb
+  - tmp
+  - less
+  - "*.sublime-project"
+  - "*.sublime-workspace"
+  - test
+  - spec
+  - Gruntfile.js
+  - package.json
+  - node_modules
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
