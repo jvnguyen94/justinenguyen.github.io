@@ -12,7 +12,7 @@ Portland, Oregon
 
 ---
 
-## 🔬 Current Projects
+## Current Projects
 
 - **Deep learning for ubiquitination site prediction**  
   Developing deep neural networks that integrate protein sequence and structural features to predict novel ubiquitination (Ub) sites, with a focus on post-translational regulation.
@@ -22,7 +22,7 @@ Portland, Oregon
 
 ---
 
-## 🧪 Previous Projects
+## Previous Projects
 
 - **Machine learning classification of bacterial OTU deubiquitinases**  
   Using supervised ML models to classify novel bacterial OTU deubiquitinases from primary amino acid sequences, contributing to functional annotation of microbial proteins.
@@ -32,7 +32,7 @@ Portland, Oregon
 
 ---
 
-## 👋 About Me
+## About Me
 
 Hi, I’m **Justine Nguyen**, a PhD candidate in **Bioinformatics & Computational Biomedicine** at **Oregon Health & Science University**. My research integrates **machine learning**, **protein structure analysis**, and **large-scale biological data** to solve complex problems in molecular biology and computational health science.
 
