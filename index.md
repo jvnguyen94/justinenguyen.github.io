@@ -7,7 +7,6 @@ Bioinformatics and Computational Biomedicine (BCB) PhD candidate in
 Department of Medical Informatics and Clinical Epidemiology (DMICE) at  
 Oregon Health & Science University (OHSU)  
 Portland, Oregon
-  june 2025
 </center>
 
 ---
@@ -26,15 +25,15 @@ Portland, Oregon
 
 ## About Me
 
-Hi, I’m **Justine Nguyen**, a PhD candidate in **Bioinformatics & Computational Biomedicine** at **Oregon Health & Science University**. My research integrates **machine learning**, **protein structure analysis**, and **large-scale biological data** to solve complex problems in molecular biology and computational health science.
+Hi, I’m **Justine Nguyen**, a PhD candidate in **Bioinformatics & Computational Biomedicine** at **Oregon Health & Science University**. I apply data-driven approaches to understand biological systems and solve challenges at the intersection of life sciences and technology.
 
-My journey into science began with a degree in **Human Physiology** from the University of Oregon, where I worked in a developmental biology lab studying how protein signaling pathways drive heart development in embryonic mice. This hands-on experience in molecular biology sparked my interest in the molecular mechanisms behind health and disease.
+My work centers around using **machine learning**, **protein structure modeling**, and **data analytics** to extract insights from complex biomedical data. I enjoy transforming raw, unstructured information into actionable knowledge that supports decision-making and innovation.
 
-After graduating, I joined a neuroscience lab at OHSU focused on **RNA-editing techniques** for correcting mutations in Rett Syndrome mouse models. There, I gained exposure to high-throughput sequencing technologies including **RNA-seq, DNA-seq, ATAC-seq,** and **ChIP-seq**, and I quickly became fascinated by the analytical side of genomics.
+With a background in human biology and strong technical expertise, I’ve built predictive models, automated analysis pipelines, and created data visualizations to support research, development, and operational needs.
 
-That led me to pursue a **Master’s in Bioinformatics**, where I developed machine learning models to classify **ubiquitin-related protein families** based solely on amino acid sequences. Now, as a PhD student, I’m continuing this work by building deep learning models to predict **post-translational modifications** and analyzing **TCGA cancer datasets** to uncover how mutations impact protein function and biological pathways.
+I’m proficient in **Python**, **R**, **SQL**, and **Linux**, and experienced with tools such as **pandas**, **scikit-learn**, **TensorFlow**, **matplotlib**, and **R Shiny**. I focus on building solutions that are **reproducible**, **interpretable**, and **impact-driven**.
 
-Beyond research, I’m passionate about **data science**, **scientific software development**, and helping bridge the gap between wet-lab biology and computational insights. I’m experienced in **Python, R, SQL,** and **Linux**, and I love building tools that are **reproducible**, **interpretable**, and **impactful**.
+I’m excited to bring my experience in computational biology and data science to roles that require critical thinking, technical depth, and a passion for solving real-world problems.
 
 ---
 
